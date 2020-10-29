@@ -126,7 +126,7 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: space-around;
-    widtH: 100%;
+    width: 100%;
 }
 
 header nav ul li {
@@ -187,6 +187,11 @@ footer .social-icons p {
      align-items: center;
      flex-flow: row wrap;
  }
+
+ .form input {
+   width: 100%;
+ }
+
  /* - Amenities - */
  .amenities {
     display: flex;
@@ -233,7 +238,8 @@ footer .social-icons p {
     align-items: center;
 }
 
-.faq-content {
+.faq-content-1,
+.faq-content-2 {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
@@ -357,15 +363,112 @@ address {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles here */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+/* ===== Header ===== */
+  header .content-wrapper {
+    justify-content: space-between;
+    margin: 30px 60px;
+    flex-flow: row nowrap;
+  }
+
+  header nav {
+    justify-content: space-between;
+  }
+/* ====== Footer ======= */
+  .footer-content {
+   display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+  }
+
+  footer .contact,
+  .social {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+/* ======= Homepage ========= */
+  /* - Sign Up - */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    flex-basis: 50%;
+    margin: 0;
+  }
+  /* - Amenities - */
+  .amenities-items {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .amenities article {
+    width: 40%;
+    margin: 30px 30px;
+  } 
+  /* - Past Retreats - */
+  .past-retreats article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .past-retreats article div {
+    width: 49%;
+  }
+/* ========== FAQ =========== */
+  .faq-questions {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .faq-content-1 {
+    width: 45%;
+    padding: 5px 15px 5px 0;
+  }
+
+  .faq-content-2 {
+    width: 45%;
+    padding: 5px 0 5px 15px;
+  }
+/* ========== About ========== */
+  .mission-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  .mission-content,
+  .column-one,
+  .column-two {
+    width: 47%;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+
 }
 
 /* ==========================================================================
