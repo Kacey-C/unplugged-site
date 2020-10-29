@@ -86,6 +86,188 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ----------- Base Header - Footer Styles ------------- */
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
+
+
+/* - Header Mobile - */
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+.header-divider {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    widtH: 100%;
+}
+
+header nav ul li {
+    width: 44%;
+}
+
+/* - Footer Mobile - */
+footer {
+    flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+
+footer .contact {
+    margin-bottom: 50px;
+}
+
+
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------- Mobile Homepage ------------------------- */
+
+/* - Hero - */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+ /* - Sign Up - */
+ aside {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+ }
+ /* - Amenities - */
+ .amenities {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+ }
+
+ .amenities article {
+     width: 63%;
+     margin: 30px 0;
+ }
+
+ .amenities .amenities-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+ }
+
+ .fontawesome-icon,
+ .amenities-item-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /* - Past Retreats - */
+ .past-retreats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .past-retreats h3 {
+     width: 55%;
+ }
+
+/* =======================
+       FAQ - Mobile
+========================== */
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-content {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+/* =========================
+        About - Mobile
+============================= */
+.mission,
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.column-one,
+.column-two,
+address {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.contact-section h3 {
+  width: 100%;
+}
 
 /* ==========================================================================
    Helper classes
