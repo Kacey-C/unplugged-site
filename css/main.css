@@ -207,7 +207,6 @@ footer .social-icons p {
  .amenities .amenities-items {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
  }
 
@@ -382,6 +381,7 @@ address {
 /* ====== Footer ======= */
   .footer-content {
    display: flex;
+   justify-content: space-around;
     flex-flow: row nowrap;
     width: 100%;
     margin: 0;
@@ -404,11 +404,12 @@ address {
     justify-content: space-between;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    flex-basis: 50%;
+  aside .form-description,
+  aside .form {
+    flex-basis: 40%;
     margin: 0;
   }
+  
   /* - Amenities - */
   .amenities-items {
     display: flex;
@@ -455,7 +456,7 @@ address {
   .mission-content,
   .column-one,
   .column-two {
-    width: 47%;
+    width: 45%;
   }
 
   .contact-info {
@@ -463,11 +464,35 @@ address {
     justify-content: space-between;
     flex-flow: row nowrap;
   }
-
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+  .content-wrapper {
+    max-width: 955px;
+    margin: 100px 0;
+  }
+/* ===== Homepage ===== */
+  /* - Sign Up - */
+  aside .content-wrapper {
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
+  
+  .form-description,
+  .form {
+    width: 25%;
+    margin: 40px 50px;
+  }
+  /* - Amenities - */
+  .amenities article {
+    width: 20%;
+    margin: 30px 63px;
+
+  }
+/* ====== FAQ =========== */
+
+/* ========= About ======== */
 
 }
 
