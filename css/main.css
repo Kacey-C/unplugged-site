@@ -126,7 +126,11 @@ p {
 }
 
 img {
+  width: 100%;
+}
 
+figure {
+  margin: 0;
 }
 
 address {
@@ -152,6 +156,10 @@ footer {
     background-color: #202322;
 }
 
+header {
+  padding-top: 1em;
+}
+
 .content-wrapper {
     width: 90%;
     margin: 50px 0;
@@ -165,6 +173,14 @@ header .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -250,6 +266,9 @@ footer .social-icons p {
     justify-content: center;
     flex-flow: row wrap;
     color: #e2e3ed;
+    height: 31.25em;
+    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+    background-size: cover;
 }
 
  /* - Sign Up - */
@@ -294,6 +313,8 @@ footer .social-icons p {
     justify-content: center;
     flex-flow: row wrap;
     color: #e2e3ed;
+    background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+    background-size: cover;
  }
 
  .amenities article {
@@ -499,10 +520,18 @@ address {
     margin: 100px 0;
   }
 /* ===== Header ===== */
-  header .content-wrapper {
+header {
+  padding-top: 0;
+}  
+
+header .content-wrapper {
     justify-content: space-between;
     margin: 30px 60px;
     flex-flow: row nowrap;
+  }
+
+  .header-divider {
+    border: none;
   }
 
   header nav {
