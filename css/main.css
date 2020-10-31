@@ -100,6 +100,7 @@ ul,
 ol {
   list-style-type: none;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 a {
@@ -110,12 +111,14 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
 }
 
 p {
@@ -146,6 +149,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322;
 }
 
 .content-wrapper {
@@ -165,6 +169,8 @@ header .content-wrapper {
 
 .header-divider {
     width: 100%;
+    border-top: 1px solid #3a3a3a;
+    margin: 10px 0;
 }
 
 header nav {
@@ -188,6 +194,8 @@ header nav ul li {
 /* - Footer Mobile - */
 footer {
     flex-direction: column;
+    text-align: center;
+    color: #ffffff;
 }
 
 footer p {
@@ -199,8 +207,17 @@ footer .content-wrapper {
     margin: 50px 0;
 }
 
-footer .contact {
+footer .contact,
+footer .social {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+footer .contact h3 {
+  width: 100%;
 }
 
 
@@ -221,7 +238,9 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    margin-bottom: 10px;
+    font-size: 0.875em;
+  }
 
 /* --------------------- Mobile Homepage ------------------------- */
 
@@ -230,6 +249,7 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    color: #e2e3ed;
 }
 
  /* - Sign Up - */
@@ -238,10 +258,34 @@ footer .social-icons p {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #527158;
+     color: #e2e3ed;
  }
 
- .form input {
+ aside .form {
+   margin-top: 30px;
+ }
+
+ input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #acadb3;
+  font-style: italic;
+  padding: 1em;
+ }
+
+ input[type=button] {
    width: 100%;
+   padding: 20px 0;
+   margin-top: 20px;
+   background-color: #2a423a;
+   font-family: 'Poppins', Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-size: 1.125em;
+   color: #e2e3ed;
+   border: none;
+   text-align: center;
+   text-transform: uppercase;
  }
 
  /* - Amenities - */
@@ -249,6 +293,7 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    color: #e2e3ed;
  }
 
  .amenities article {
@@ -260,6 +305,7 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    text-align: center;
  }
 
  .fontawesome-icon,
@@ -274,6 +320,8 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #2a423a;
+    color: #e2e3ed;
  }
 
  .past-retreats h3 {
