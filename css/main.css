@@ -336,6 +336,11 @@ footer .social-icons p {
     align-items: center;
  }
 
+ .amenities i {
+   font-size: 3.75em;
+   margin-bottom: 30px;
+ }
+
  /* - Past Retreats - */
  .past-retreats {
     display: flex;
