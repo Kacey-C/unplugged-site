@@ -634,6 +634,10 @@ header .content-wrapper {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 45%;
+  }
+
   .contact-info {
     display: flex;
     justify-content: space-between;
@@ -668,7 +672,9 @@ header .content-wrapper {
 /* ====== FAQ =========== */
 
 /* ========= About ======== */
-
+  .map figure {
+    padding-bottom: 38%;
+  }
 }
 
 /* ==========================================================================
