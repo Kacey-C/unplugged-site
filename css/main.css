@@ -335,6 +335,8 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #527158;
+    color: #e2e3ed;
 }
 
 .faq-content-1,
@@ -342,6 +344,15 @@ footer .social-icons p {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.faq h3 {
+  margin-bottom: 0;
+}
+
+.faq p {
+  margin-top: .75em;
+  margin-bottom: 2em;
 }
 
 
@@ -355,10 +366,25 @@ footer .social-icons p {
   align-items: center;
 }
 
+.mission {
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
 .mission-content {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.contact-section {
+  background-color: #2a423a;
+  color: #e2e3ed;
+}
+
+.mission h2,
+.contact-section h2 {
+  margin-bottom: 0;
 }
 
 .column-one,
@@ -367,7 +393,11 @@ address {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
+}
 
+.mission-content {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-section h3 {
