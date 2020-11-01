@@ -93,7 +93,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: .875em;
 }
 
 ul, 
@@ -578,11 +578,15 @@ header .content-wrapper {
 /* ====== Footer ======= */
   .footer-content {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: flex-start;
     flex-flow: row nowrap;
     width: 100%;
     margin: 0;
+  }
+
+  footer .content-wrapper {
+    width: 90%;
   }
 
   footer .contact,
@@ -595,6 +599,11 @@ header .content-wrapper {
     width: 100%;
   }
 /* ======= Homepage ========= */
+  /* - Hero - */
+  .hero .content-wrapper {
+    margin-top: 25px;
+  }
+
   /* - Sign Up - */
   aside .content-wrapper {
     margin: 50px 0;
@@ -606,6 +615,10 @@ header .content-wrapper {
   aside .form {
     flex-basis: 40%;
     margin: 0;
+  }
+
+  aside .form-description p{
+    width: 90%;
   }
   
   /* - Amenities - */
@@ -647,14 +660,23 @@ header .content-wrapper {
     flex-flow: row wrap;
   }
 
+  .faq h2 {
+    padding-top: 0;
+  }
+
+  .faq-questions h3 {
+    font-size: 1em;
+    padding-top: 0;
+  }
+
   .faq-content-1 {
     width: 45%;
-    padding: 5px 15px 5px 0;
+    padding: 0 15px 5px 0;
   }
 
   .faq-content-2 {
     width: 45%;
-    padding: 5px 0 5px 15px;
+    padding: 0 0 5px 15px;
   }
 /* ========== About ========== */
   .mission-content-wrapper {
@@ -687,6 +709,10 @@ header .content-wrapper {
     margin: 100px 0;
   }
 
+  body {
+    font-size: 1.125em;
+  }
+
   h1 {
     font-size: 3.75em;
   }
@@ -695,7 +721,18 @@ header .content-wrapper {
   h4 {
     font-size: 1.875em;
   }
+
+  /* - Footer Styles - */
+  footer .content-wrapper {
+    width: 70%;
+  }
 /* ===== Homepage ===== */
+  /* - Hero - */
+  .hero .content-wrapper {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   /* - Sign Up - */
   aside .content-wrapper {
     justify-content: space-around;
@@ -717,9 +754,22 @@ header .content-wrapper {
   .past-retreats article figure {
     width: 44%;
   }
+
 /* ====== FAQ =========== */
+  .faq h2 {
+    font-size: 3em;
+  }
+
+  .faq-questions h3 {
+    font-size: 1.125em;
+  }
 
 /* ========= About ======== */
+  .mission h2,
+  .contact-section h2 {
+    font-size: 3em;
+  }
+
   .map figure {
     padding-bottom: 38%;
   }
